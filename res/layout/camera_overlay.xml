@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/camera_overlay_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="2dp"
+    android:background="@color/light_gray" >
+
+    
+       <ImageView
+            android:id="@+id/imgExercise"
+            android:layout_width="125dp"
+            android:layout_height="150dp"
+            android:layout_alignParentLeft="true"
+            android:src="@drawable/avatar"
+            android:scaleType="fitXY"
+            />
+
+        <TextView
+        android:id="@+id/name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:layout_toRightOf="@+id/imgExercise"
+        android:fontFamily="sans-serif-condensed"
+        android:text="Name"
+        android:textSize="30sp" />
+        
+        <TextView
+        android:padding="5dp"
+        android:id="@+id/horse"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="left"
+        android:layout_below="@+id/name"
+        android:layout_toRightOf="@+id/imgExercise"
+        android:fontFamily="sans-serif-condensed"
+        android:text="@string/horse"
+        android:textSize="22sp" />
+        
+        <TextView
+        android:padding="5dp"
+        android:id="@+id/horseName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="left"
+        android:layout_below="@+id/name"
+        android:layout_toRightOf="@+id/horse"
+        android:fontFamily="sans-serif-condensed"
+        android:text="unknown"
+        android:textSize="22sp" />
+        
+        <TextView
+        android:padding="5dp"
+        android:id="@+id/trainer"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="left"
+        android:layout_below="@+id/horse"
+        android:layout_toRightOf="@+id/imgExercise"
+        android:fontFamily="sans-serif-condensed"
+        android:text="@string/trainer"
+        android:textSize="22sp" />
+        
+        <TextView
+        android:padding="5dp"
+        android:id="@+id/trainerName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="left"
+        android:layout_below="@+id/horseName"
+        android:layout_toRightOf="@+id/trainer"
+        android:fontFamily="sans-serif-condensed"
+        android:text="unknown"
+        android:textSize="22sp" />
+        
+        
+        <TextView
+        android:padding="5dp"
+        android:id="@+id/position"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="left"
+        android:layout_below="@+id/trainer"
+        android:layout_toRightOf="@+id/imgExercise"
+        android:fontFamily="sans-serif-condensed"
+        android:text="@string/position"
+        android:textSize="22sp" />
+        
+        <TextView
+        android:padding="5dp"
+        android:id="@+id/currentPosition"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="left"
+        android:layout_below="@+id/trainerName"
+        android:layout_toRightOf="@+id/position"
+        android:fontFamily="sans-serif-condensed"
+        android:text="unknown"
+        android:textSize="22sp" />
+         
+                              <ProgressBar
+            android:id="@+id/loading_indicator"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true" />
+         
+         <RelativeLayout 
+              android:id="@+id/arLayout"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:layout_below="@+id/imgExercise"
+              android:paddingTop="8dp"
+              android:layout_alignParentBottom="true"
+             >
+
+
+        </RelativeLayout>
+</RelativeLayout>
